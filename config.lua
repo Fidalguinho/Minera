@@ -23,15 +23,15 @@ orangeSkullDuration = 7
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25
-ip = "127.0.0.1"
+ip = "189.38.162.78"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
 statusProtocolPort = 7171
 maxPlayers = 0
 motd = "O bird tem a cabeça grande"
-onePlayerOnlinePerAccount = true
-allowClones = false
+onePlayerOnlinePerAccount = false
+allowClones = true
 serverName = "Cabeça do Bird"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
