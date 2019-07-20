@@ -1,0 +1,2 @@
+/addskill NIck, experience, 999
+/addskill Nuck, Skill, 999
