@@ -4,9 +4,9 @@ worldType = "no-pvp"
 hotkeyAimbotEnabled = true
 protectionLevel = 8
 pzLocked = 60 * 1000
-removeChargesFromRunes = true
-removeChargesFromPotions = true
-removeWeaponAmmunition = true
+removeChargesFromRunes = false
+removeChargesFromPotions = false
+removeWeaponAmmunition = false
 removeWeaponCharges = true
 timeToDecreaseFrags = 24 * 60 * 60 * 1000
 whiteSkullTime = 15 * 60 * 1000
@@ -31,7 +31,7 @@ statusProtocolPort = 7171
 maxPlayers = 0
 motd = "O bird tem a cabeça grande"
 onePlayerOnlinePerAccount = false
-allowClones = true
+allowClones = false
 serverName = "Cabeça do Bird"
 statusTimeout = 5 * 1000
 replaceKickOnLogin = true
@@ -122,9 +122,9 @@ classicAttackSpeed = false
 -- Rates
 -- NOTE: rateExp is not used if you have enabled stages in data/XML/stages.xml
 rateExp = 999
-rateSkill = 999
-rateLoot = 999
-rateMagic = 999
+rateSkill = 10
+rateLoot = 5
+rateMagic = 10
 rateSpawn = 5
 
 -- Monster rates
@@ -137,7 +137,7 @@ deSpawnRange = 2
 deSpawnRadius = 50
 
 -- Stamina
-staminaSystem = true
+staminaSystem = false
 
 -- Scripts
 warnUnsafeScripts = true
