@@ -192,6 +192,23 @@ function onLogin(player)
  	if player:getStorageValue(Storage.combatProtectionStorage) < 1 then
         player:setStorageValue(Storage.combatProtectionStorage, 1)
         onMovementRemoveProtection(playerId, player:getPosition(), 10)
+		player:setStorageValue(Storage.ForgottenKnowledge.Tomes, 7)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessDeath, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessViolet, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessFire, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessIce, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessGolden, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.AccessLast, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.LadyTenebrisKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.LloydKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.ThornKnightKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.DragonkingKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.HorrorKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.TimeGuardianKilled, 1)
+		player:setStorageValue(Storage.ForgottenKnowledge.LastLoreKilled, 1)
+
+
+
 	end
 
 	-- Exp stats
