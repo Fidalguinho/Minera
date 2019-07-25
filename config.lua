@@ -23,7 +23,7 @@ orangeSkullDuration = 7
 -- Connection Config
 -- NOTE: maxPlayers set to 0 means no limit
 -- NOTE: MaxPacketsPerSeconds if you change you will be subject to bugs by WPE, keep the default value of 25
-ip = "189.38.162.78"
+ip = "189.38.162.135"
 bindOnlyGlobalAddress = false
 loginProtocolPort = 7171
 gameProtocolPort = 7172
@@ -57,11 +57,11 @@ depotBoxes = 17
 -- GameStore
 gamestoreByModules = true
 
--- Quest Sytem
+-- Quest System
 loadQuestLua = true
 
--- Casting System 
-enableLiveCasting = true
+-- Casting System
+enableLiveCasting = false
 liveCastPort = 7173
 
 -- Expert Pvp Config
