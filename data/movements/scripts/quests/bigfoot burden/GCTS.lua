@@ -1,8 +1,8 @@
 local destination = {
-	[4121] = {position = Position(32801, 31766, 9), storageValue = 1, needCrystal = true},
-	[3220] = {position = Position(32627, 31864, 11), storageValue = 1, needCrystal = true},
-	[3128] = {position = Position(33000, 31870, 13), storageValue = 1},
-	[3129] = {position = Position(32795, 31762, 10), storageValue = 1},
+	[4121] = {position = Position(32801, 31766, 9), storageValue = 1, needCrystal = false},
+	[3220] = {position = Position(32627, 31864, 11), storageValue = 1, needCrystal = false}, --Kazordoon
+	[3128] = {position = Position(33000, 31870, 13), storageValue = 1}, --In Mission Grounds
+	[3129] = {position = Position(32795, 31762, 10), storageValue = 1}, --To Mission Grounds
 	[3130] = {position = Position(32864, 31844, 11), storageValue = 1},
 	[3131] = {position = Position(32803, 31746, 10), storageValue = 1},
 	[3132] = {position = Position(32988, 31862, 9), storageValue = 27}, -- Gnomebase Alpha
@@ -11,11 +11,11 @@ local destination = {
 	[3135] = {position = Position(33001, 31915, 9), storageValue = 27}, -- back from golems
 	[3136] = {position = Position(32904, 31894, 13), storageValue = 27}, -- vulcongras
 	[3137] = {position = Position(32979, 31907, 9), storageValue = 27}, -- back from vulcongras
-	[3215] = {position = Position(32329, 32172, 9), storageValue = 1, needCrystal = true},
-	[3216] = {position = Position(32195, 31182, 8), storageValue = 1, needCrystal = true},
-	[3217] = {position = Position(32402, 32816, 6), storageValue = 1, needCrystal = true},
-	[3218] = {position = Position(33153, 31833, 10), storageValue = 1, needCrystal = true},
-	[3219] = {position = Position(33186, 32385, 8), storageValue = 1, needCrystal = true},
+	[3215] = {position = Position(32329, 32172, 9), storageValue = 1, needCrystal = false},
+	[3216] = {position = Position(32195, 31182, 8), storageValue = 1, needCrystal = false},
+	[3217] = {position = Position(32402, 32816, 6), storageValue = 1, needCrystal = false},
+	[3218] = {position = Position(33153, 31833, 10), storageValue = 1, needCrystal = false},
+	[3219] = {position = Position(33186, 32385, 8), storageValue = 1, needCrystal = false},
 	[3222] = {position = Position(32771, 31800, 10), storageValue = 11, needCrystal = false},
 	[3221] = {position = Position(32790, 31795, 10), storageValue = 11, needCrystal = false}
 }
@@ -38,12 +38,6 @@ function onStepIn(creature, item, position, fromPosition)
 		return false
 	end
 
-	if player:getStorageValue(Storage.BigfootBurden.QuestLine) < teleportCrystal.storageValue then
-		position:sendMagicEffect(CONST_ME_TELEPORT)
-		player:teleportTo(fromPosition)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your rank among the Gnomes is too low.")
-		return false
-	end
 
 	if not teleportCrystal.needCrystal or player:removeItem(18457, 1) then
 		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
