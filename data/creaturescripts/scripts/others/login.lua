@@ -192,6 +192,8 @@ function onLogin(player)
  	if player:getStorageValue(Storage.combatProtectionStorage) < 1 then
         player:setStorageValue(Storage.combatProtectionStorage, 1)
         onMovementRemoveProtection(playerId, player:getPosition(), 10)
+
+		--Forgotten Knowledge
 		player:setStorageValue(Storage.ForgottenKnowledge.Tomes, 7)
 		player:setStorageValue(Storage.ForgottenKnowledge.AccessDeath, 1)
 		player:setStorageValue(Storage.ForgottenKnowledge.AccessViolet, 1)
@@ -206,6 +208,41 @@ function onLogin(player)
 		player:setStorageValue(Storage.ForgottenKnowledge.HorrorKilled, 1)
 		player:setStorageValue(Storage.ForgottenKnowledge.TimeGuardianKilled, 1)
 		player:setStorageValue(Storage.ForgottenKnowledge.LastLoreKilled, 1)
+
+		--Rashid
+		player:setStorageValue(Storage.TravellingTrader.Mission01, 2)
+		player:setStorageValue(Storage.TravellingTrader.Mission02, 5)
+		player:setStorageValue(Storage.TravellingTrader.Mission03, 3)
+		player:setStorageValue(Storage.TravellingTrader.Mission04, 3)
+		player:setStorageValue(Storage.TravellingTrader.Mission05, 3)
+		player:setStorageValue(Storage.TravellingTrader.Mission06, 2)
+		player:setStorageValue(Storage.TravellingTrader.Mission07, 1)
+
+		--Bigfoot Burden
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 1)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 2)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 4)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 7)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 9)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 12)
+		player:setStorageValue(Storage.BigfootBurden.Shooting, 5)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 16)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 20)
+		player:setStorageValue(Storage.BigfootBurden.QuestLine, 23)
+		player:setStorageValue(Storage.BigfootBurden.QuestLineComplete, 2)
+		player:setStorageValue(Storage.BigfootBurden.Rank, 999999)
+		--Warzone Access
+		player:setStorageValue(Storage.BigfootBurden.Warzone1Access, 2)
+		player:setStorageValue(Storage.BigfootBurden.Warzone2Access, 2)
+		player:setStorageValue(Storage.BigfootBurden.Warzone3Access, 2)
+
+		--PoI Shortcut
+		player:setStorageValue(Storage.PitsOfInferno.ShortcutHub, 1)
+
+
+
+
+
 
 
 
